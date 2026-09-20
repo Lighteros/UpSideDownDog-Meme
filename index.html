@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UpSideDownDog | USDD on Arc</title>
+  <meta name="description" content="The UpSide Down Dog on Arc. Name UpSideDownDog. Symbol USDD. Felt green, inverted gravity, live on Circle Arc." />
+  <meta property="og:title" content="UpSideDownDog | USDD" />
+  <meta property="og:description" content="The UpSide Down Dog on Arc." />
+  <meta property="og:image" content="assets/logo.png" />
+  <meta name="theme-color" content="#062016" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,500;1,6..72,600&family=Paytone+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/felt.css" />
+</head>
+<body>
+  <div class="canopy" aria-hidden="true">
+    <canvas id="rise-field"></canvas>
+    <div class="velvet"></div>
+    <div class="halo halo-a"></div>
+    <div class="halo halo-b"></div>
+    <div class="halo halo-c"></div>
+    <div class="felt-grain"></div>
+    <div class="cursor-well" id="cursor-well"></div>
+  </div>
+
+  <div class="tape" aria-hidden="true">
+    <div class="tape-run">
+      <span>UpSideDownDog</span><i></i>
+      <span>USDD</span><i></i>
+      <span>The UpSide Down Dog on Arc</span><i></i>
+      <span>Chain 5042</span><i></i>
+      <span>Gas is USDC</span><i></i>
+      <span>Trade on Uniswap</span><i></i>
+      <span>Track on Dexscreener</span><i></i>
+      <span>UpSideDownDog</span><i></i>
+      <span>USDD</span><i></i>
+      <span>The UpSide Down Dog on Arc</span><i></i>
+      <span>Chain 5042</span><i></i>
+      <span>Gas is USDC</span><i></i>
+      <span>Trade on Uniswap</span><i></i>
+      <span>Track on Dexscreener</span><i></i>
+    </div>
+  </div>
+
+  <header class="rail">
+    <a class="mark" href="#hero">
+      <img src="assets/logo.png" alt="UpSideDownDog" />
+      <span>
+        <strong>UpSideDownDog</strong>
+        <small>USDD</small>
+      </span>
+    </a>
+    <nav class="links" id="links">
+      <a href="#hero">Hero</a>
+      <a href="#about">About</a>
+      <a href="#howtobuy">How to buy</a>
+      <a href="#chart">Chart</a>
+      <a href="#joinus">Join us</a>
+    </nav>
+    <div class="rail-icons">
+      <a href="https://x.com/USDDARC" target="_blank" rel="noopener" aria-label="UpSideDownDog on X">
+        <img src="assets/icons/x.svg" alt="" />
+      </a>
+      <a href="https://dexscreener.com/arc" target="_blank" rel="noopener" aria-label="Dexscreener on Arc">
+        <img src="assets/icons/dexscreener.svg" alt="" />
+      </a>
+      <a href="https://app.uniswap.org/swap?chain=arc" target="_blank" rel="noopener" aria-label="Uniswap on Arc">
+        <img src="assets/icons/uniswap.svg" alt="" />
+      </a>
+      <button class="menu-btn" id="menu-btn" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="pendant">
+        <div class="leash"></div>
+        <div class="clip"></div>
+        <div class="portrait-wrap">
+          <div class="ring r1"></div>
+          <div class="ring r2"></div>
+          <div class="ring r3"></div>
+          <img class="portrait" src="assets/logo.png" alt="UpSideDownDog wearing the green dollar cap" />
+        </div>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">Live on Arc</p>
+        <h1>
+          <span class="word">UpSide</span>
+          <span class="word invert-word">Down</span>
+          <span class="word">Dog</span>
+        </h1>
+        <p class="lede">The UpSide Down Dog on <a href="https://www.arc.network" target="_blank" rel="noopener">@Arc</a>.</p>
+        <p class="sub">Gravity quit. The cap stayed on. USDD hangs from the ceiling of Circle Arc and waits for the room to flip back.</p>
+        <div class="cta-row">
+          <a class="btn primary tug" href="https://app.uniswap.org/swap?chain=arc" target="_blank" rel="noopener">
+            <img src="assets/icons/uniswap.svg" alt="" />
+            Buy USDD
+          </a>
+          <a class="btn ghost tug" href="https://dexscreener.com/arc" target="_blank" rel="noopener">
+            <img src="assets/icons/dexscreener.svg" alt="" />
+            Arc chart
+          </a>
+        </div>
+        <dl class="chips">
+          <div>
+            <dt>Name</dt>
+            <dd>UpSideDownDog</dd>
+          </div>
+          <div>
+            <dt>Symbol</dt>
+            <dd>USDD</dd>
+          </div>
+          <div>
+            <dt>Chain</dt>
+            <dd>Arc 5042</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-head rise">
+        <p class="kicker">About</p>
+        <h2>A dog that refused the floor.</h2>
+        <p>The hat is felt green. The mark is a dollar. The face is a golden retriever hanging the wrong way up, perfectly calm about it.</p>
+      </div>
+      <div class="about-grid">
+        <figure class="about-plate rise">
+          <img src="assets/logo.png" alt="UpSideDownDog portrait" />
+          <figcaption>Official portrait. Cap first. World second.</figcaption>
+        </figure>
+        <div class="about-copy rise">
+          <p>UpSideDownDog is a memecoin on Arc, Circle's financial Layer 1. The joke is visual and complete: markets invert, the dog does not blink, and the green dollar cap becomes the only upright thing in the room.</p>
+          <p>USDC is gas on Arc. Uniswap is the desk. Dexscreener is the window. The rest is felt, gold fur, and a long hang from the rafters.</p>
+          <ul class="facts">
+            <li><span>Token</span><strong>UpSideDownDog / USDD</strong></li>
+            <li><span>Network</span><strong>Arc mainnet</strong></li>
+            <li><span>Chain ID</span><strong>5042</strong></li>
+            <li><span>RPC</span><strong>rpc.mainnet.arc.io</strong></li>
+            <li><span>Gas</span><strong>Native USDC</strong></li>
+            <li><span>Desk</span><strong>Uniswap on Arc</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="howtobuy" id="howtobuy">
+      <div class="section-head rise">
+        <p class="kicker">How to buy</p>
+        <h2>Four hangs to a bag.</h2>
+        <p>Arc is EVM. Gas is USDC. The swap lives on Uniswap. The tape lives on Dexscreener.</p>
+      </div>
+      <ol class="steps">
+        <li class="step rise">
+          <div class="step-leash"></div>
+          <div class="step-card">
+            <span class="num">01</span>
+            <img src="assets/icons/metamask.svg" alt="" />
+            <h3>Open a wallet</h3>
+            <p>Use MetaMask or any EVM wallet that can add a custom network. Keep the seed off the page.</p>
+            <button class="text-link" id="add-arc" type="button">Add Arc to MetaMask</button>
+          </div>
+        </li>
+        <li class="step rise">
+          <div class="step-leash"></div>
+          <div class="step-card">
+            <span class="num">02</span>
+            <img src="assets/icons/blockscout.svg" alt="" />
+            <h3>Land on Arc</h3>
+            <p>Network Arc. Chain ID 5042. RPC rpc.mainnet.arc.io. Bridge native USDC. That balance is also your gas.</p>
+            <a class="text-link" href="https://explorer.arc.io" target="_blank" rel="noopener">Open explorer.arc.io</a>
+          </div>
+        </li>
+        <li class="step rise">
+          <div class="step-leash"></div>
+          <div class="step-card">
+            <span class="num">03</span>
+            <img src="assets/icons/uniswap.svg" alt="" />
+            <h3>Swap for USDD</h3>
+            <p>Open Uniswap, set the network to Arc, and take USDD against USDC. Confirm the contract before you sign.</p>
+            <a class="text-link" href="https://app.uniswap.org/swap?chain=arc" target="_blank" rel="noopener">Open Uniswap on Arc</a>
+          </div>
+        </li>
+        <li class="step rise">
+          <div class="step-leash"></div>
+          <div class="step-card">
+            <span class="num">04</span>
+            <img src="assets/icons/dexscreener.svg" alt="" />
+            <h3>Watch the tape</h3>
+            <p>Dexscreener indexes Arc pairs. Use the Arc board to find USDD and keep the hang honest.</p>
+            <a class="text-link" href="https://dexscreener.com/arc" target="_blank" rel="noopener">Open Dexscreener Arc</a>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="chart" id="chart">
+      <div class="section-head rise">
+        <p class="kicker">Chart</p>
+        <h2>Arc pairs, live.</h2>
+        <p>Dexscreener embed for Arc. No extra widgets. The chain tape only.</p>
+      </div>
+      <div class="chart-frame rise">
+        <iframe
+          title="Dexscreener Arc chart"
+          src="https://dexscreener.com/arc?embed=1&theme=dark&trades=0&info=0"
+          loading="lazy"
+        ></iframe>
+      </div>
+      <p class="chart-note rise">
+        <a href="https://dexscreener.com/arc" target="_blank" rel="noopener">View Arc pairs on Dexscreener</a>
+      </p>
+    </section>
+
+    <section class="joinus" id="joinus">
+      <div class="section-head rise">
+        <p class="kicker">Join us</p>
+        <h2>Hang with the house.</h2>
+        <p>The official 3:1 banner. Same felt. Same cap. Same inverted dog.</p>
+      </div>
+      <figure class="banner-plate rise">
+        <img src="assets/banner.png" alt="UpSideDownDog banner" />
+      </figure>
+      <div class="join-row">
+        <a class="join-card rise tug" href="https://x.com/USDDARC" target="_blank" rel="noopener">
+          <img src="assets/icons/x.svg" alt="" />
+          <span>X / USDDARC</span>
+          <small>The only official handle</small>
+        </a>
+        <a class="join-card rise tug" href="https://dexscreener.com/arc" target="_blank" rel="noopener">
+          <img src="assets/icons/dexscreener.svg" alt="" />
+          <span>Dexscreener Arc</span>
+          <small>Live pairs on the chain</small>
+        </a>
+        <a class="join-card rise tug" href="https://app.uniswap.org/swap?chain=arc" target="_blank" rel="noopener">
+          <img src="assets/icons/uniswap.svg" alt="" />
+          <span>Uniswap Arc</span>
+          <small>Swap USDC for USDD</small>
+        </a>
+        <a class="join-card rise tug" href="https://explorer.arc.io" target="_blank" rel="noopener">
+          <img src="assets/icons/blockscout.svg" alt="" />
+          <span>Arc explorer</span>
+          <small>Read the chain in the open</small>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="floor">
+    <a class="mark" href="#hero">
+      <img src="assets/logo.png" alt="" />
+      <span>
+        <strong>UpSideDownDog</strong>
+        <small>USDD on Arc</small>
+      </span>
+    </a>
+    <p>The UpSide Down Dog on Arc. Not financial advice. Memecoins can go to zero the right way up.</p>
+    <div class="floor-icons">
+      <a href="https://x.com/USDDARC" target="_blank" rel="noopener" aria-label="X">
+        <img src="assets/icons/x.svg" alt="" />
+      </a>
+      <a href="https://dexscreener.com/arc" target="_blank" rel="noopener" aria-label="Dexscreener">
+        <img src="assets/icons/dexscreener.svg" alt="" />
+      </a>
+      <a href="https://app.uniswap.org/swap?chain=arc" target="_blank" rel="noopener" aria-label="Uniswap">
+        <img src="assets/icons/uniswap.svg" alt="" />
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/invert.js"></script>
+</body>
+</html>
